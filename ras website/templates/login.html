@@ -1,0 +1,94 @@
+<html>
+        
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>info</title>
+</head>
+<body>
+	<h2 align="center">WELCOME TO RAS OFFICIAL LOGIN PAGE</h2>
+	<div class="container">
+		<h3 align="center">Login here</h3>
+	<form action="http://127.0.0.1:5000/login" method="POST">
+	<!-- <h3>Enter your Email</h3> -->
+	<label for="email" style="font-size: 20px;color: black;">Enter your email : </label>
+	<input type="Email" name="email" required>
+	<!-- <h3>Enter your password</h3> -->
+	<label for="password" style="font-size: 20px;color: black;">Enter your password : </label>
+	<input type="password" name="password" required>
+	
+	<input type="submit" value="Submit">
+</form>
+</div>
+</body>
+<style type="text/css">
+	body{
+		font-family: sans-serif;
+        margin: 0;
+        padding: 0;
+	}
+	input[type=submit]{
+    width:50%;
+    box-sizing: border-box;
+    padding: 10px 0;
+    margin-top: 10px;
+    margin-left: 30%;
+    outline: none;
+    border:hsl(106, 85%, 43%);
+    border-radius: 5px;
+    font-size:20px;
+    border: 1px solid #000;
+   /* color:rgb(218, 34, 34);*/
+   color: black;
+}
+.container {
+	display: grid;
+    max-width: 350px;
+    border-radius:20px;
+    margin-left:8%;
+    box-sizing:border-box;
+    padding: 40px;
+    color:black;
+    margin-top:-30px;
+    margin-left: 35%;
+    background-color:white;
+}
+input[type=submit]:hover{
+    background:grey;
+}
+input[type=email],input[type=password]{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 5px;
+    background: rgba(0,0,0,0.10);
+    outline: none;
+    border: 1px solid #000;
+    color:black;
+    border-radius:5px;
+    margin:5px;
+    font-weight:bold;
+}
+@media only screen and (max-width:620px) {
+  /* For mobile phones: */
+  .container {
+    width:100%;
+    margin-left: 80px;
+  }
+  @media screen and (max-width: 1060px) {
+
+#email { width:67%; }
+
+#password { width:30%; margin-left:3%;}  
+
+}
+
+
+/* Tabled Portrait */
+
+@media screen and (max-width: 768px) {
+
+#email { width:100%; }
+#password { width:100%; margin:0; border:none; }
+}
+}
+</style>
+</html>
